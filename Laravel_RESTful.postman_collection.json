@@ -1,0 +1,80 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Laravel_RESTful",
+		"_postman_id": "0868a772-27f6-06bb-4223-735a60874ee7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Meeting",
+			"request": {
+				"url": "http://localhost:8000/api/v1/meeting",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"time\": \"20171212133001\",\n\t\"title\": \"Meet\",\n\t\"description\": \"Test\",\n\t\"user_id\": \"2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Meetings",
+			"request": {
+				"url": "http://localhost:8000/api/v1/meeting",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Meeting",
+			"request": {
+				"url": "http://localhost:8000/api/v1/meeting/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

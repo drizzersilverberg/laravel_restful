@@ -8,7 +8,7 @@ class Meeting extends Model
 {
     protected $fillable = ['time', 'title', 'description'];
 
-    public function users(){
+    public function users() {
         return $this->belongsToMany('App\User');
     }
 }
