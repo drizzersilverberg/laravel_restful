@@ -75,6 +75,56 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "Signin User",
+			"request": {
+				"url": "http://localhost:8000/api/v1/user/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"dendi@gmail.com\",\n\t\"password\": \"handian\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"url": "http://localhost:8000/api/v1/user/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"dendi handian\",\n\t\"email\": \"dendi@gmail.com\",\n\t\"password\": \"handian\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
